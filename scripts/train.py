@@ -13,9 +13,9 @@ if __name__ == "__main__":
 
 	# apprentissage d'un modèle
 	clf = RandomForestClassifier(
-		max_depth=1,
-		n_estimators=1,
-		max_features=1,
+		max_depth=10,
+		n_estimators=5,
+		max_features=10,
 		criterion='gini',
 		random_state=0)
 	clf.fit(X, y)
